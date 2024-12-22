@@ -24,7 +24,7 @@
 > 
 > 百度网盘下载地址：https://pan.baidu.com/s/1bv4DiEU62A8m6MUdBnaXpg  提取码：db8j
 
-
+## kali linux 2024.1版
 > 系统版本：kali linux 2024.1
 
 > 固件类型：BIOS

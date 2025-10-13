@@ -1,8 +1,35 @@
-> 系统版本：kali linux 2024.4
+## 💻 版本信息
 
-> 固件类型：BIOS
+> 🧩 **版本**：KDE 魔改 V4（基于 Kali Linux 2025.3）
+>
+> 🧬 **内核**：6.12.38+kali-amd64
+>
+> 🧱 **固件类型**：BIOS
+>
+> 👤 **默认用户**：zss / 密码：ss
+>
+> 📅 **发布日期**：2025 年
 
-> 用户: zss 密码: ss
+
+
+## 🧰 完整版 kali linux 2025.3
+
+> 系统压缩包大小：**11.7 GB**
+> 解压后大小：**约 28.0 GB**
+>
+> 夸克地址：https://pan.quark.cn/s/c29ef5b66fa0 提取码：3g7w 
+
+
+
+## 💿 系统版 kali linux 2025.3
+
+> 系统压缩包大小：6.61 GB
+>
+> 解出来：22.00GB 左右
+>
+> 夸克地址：https://pan.quark.cn/s/751fc4c933f1 提取码：hpgv
+
+
 
 ## 完整版 kali linux 2024.4
 
@@ -47,8 +74,277 @@
 >
 > 系统版大小4.91 GB 下载地址：https://pan.quark.cn/s/020a81c976f1  提取码：Sdzr
 
+# v4
 
-## 前言
+## 🪄前言
+
+过去六七年间，我持续打磨 Kali 桌面体验，目标是让它在不同硬件平台上都保持稳定、流畅和实用性，Kali 从工具层面的强大出发，桌面体验也应当服务于效率与长期使用的舒适性。此次我们将经过多代迭代的 KDE 魔改带到了 **V4（基于 KDE Plasma 6）**
+
+目前来说现在物理机当作主力机完全够用的
+
+-  **2021–2022 年**：在「**DRT安全团队**」发布首个 KDE 美化版
+-  **2023 年**：推出 i3 魔改版（超轻量，适合高级用户）
+-  **2024 年 5 月**：发布 KDE 魔改 V2，受到众多用户使用
+-  **2024 年底**：在「**知攻善防实验室**」推出 KDE 魔改 V3，重点优化虚拟机运行流畅度
+-  **2025 年10月**：全新升级至 KDE Plasma 6（V4），界面更现代，性能更轻盈
+
+## 🧠 系统介绍：Kali Linux
+
+Kali Linux 是一个专为 道德黑客 **渗透测试人员与安全研究者** 设计的开源操作系统 基于 Debian发行版，由 Offensive Security 维护。它提供了上千个安全工具的官方仓库，并在版本发布时针对硬件兼容性、性能和 UI 进行长期优化
+
+
+## ⚡ 系统优化
+
+这个美化是按照虚拟机性能美化的，在这个版本叫没有用的美化，和消耗资源的美化给取消了
+
+1. 系统的内存优化
+2. 硬盘优化
+3. 界面优化
+
+## 🧰 2025 kali官方更新亮点
+
+###  📡 Nexmon 扩展支持
+
+针对部分无线芯片提供固件补丁，支持：监控模式（Sniffing）、注入模式（Packet Injection）
+
+### 🧾新增核心工具
+
+| 工具名                | 简介                                |
+| --------------------- | ----------------------------------- |
+| Caido / Caido-CLI     | Web 安全审计工具包                  |
+| Detect It Easy（DiE） | 文件类型识别                        |
+| Gemini CLI            | 开源 AI 代理，终端内使用 Gemini     |
+| krbrelayx             | Kerberos 中继与委派滥用工具         |
+| ligolo-mp             | 多人隧道/穿透方案                   |
+| llm-tools-nmap        | 让 LLM 调用 nmap 扫描               |
+| mcp-kali-server       | 连接 AI Agent 与 Kali 的桥梁        |
+| patchleaks            | 自动识别安全补丁与漏洞描述          |
+| vwifi-dkms            | 创建虚拟 Wi-Fi 网络，支持连接与断开 |
+
+## 🤖AI 终端
+
+谷歌在 2025 年 6 月发布了 **Gemini CLI** 新版本，Kali 魔改版（v4）已经集成了它
+使用 Gemini CLI 后，Kali 可以变成一个 **智能 AI 终端**，不仅能生成代码，还能分析系统配置
+
+启动`gemini-cli`
+
+登录上账号
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011151004104.png)
+
+### 📝 让 AI 创建脚本文件
+
+你可以让 AI 直接在系统中创建脚本文件。例如：
+
+- 需求：生成一个 **打印当前时间** 的 Python 脚本
+
+在终端输入：`创建一个 Python 文件 current_time.py，内容是打印当前时间`
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011154224914.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011154312436.png)
+
+**执行成功后，脚本会被写入系统，例如桌面目录：**
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011154538888.png)
+
+### 🔍 让 AI 分析系统配置
+
+AI 还可以读取并分析系统文件，例如 `/etc/fstab`：
+
+在终端输入：`请帮我把 /etc/fstab 里的挂载项解释成中文并给出优化建议`
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011161041418.png)
+
+AI 成功读取并分析了系统的挂载配置：
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011161301508.png)
+
+### 🕵️‍♀️ 让 AI 自动化信息收集漏洞扫描
+
+对192.168.226.58目标进行信息搜集和漏洞扫描
+
+在终端输入：`目标为 192.168.226.58 生成一组信息收集与漏洞扫描命令：先用 naabu 扫端口，再用 nmap 深度扫描开放端口，最后用nuclei 批量检测常见漏洞`
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011200119575.png)
+
+![image-20251011200133709](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011200133709.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011200137777.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011200244461.png)
+
+
+### 🕵️‍♀️ 让 AI 操作系统
+
+让他帮我清理系统垃圾
+
+输入：`清理临时目录，释放磁盘空间，并显示前10个占用最大目录`
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011201051831.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011201237023.png)
+
+### 🕵️‍♀️ 让 AI 自动化系统入侵分析
+
+让AI帮我检测帮我我们系统是否被入侵了
+
+在终端输入：`帮我检查系统是否被入侵了`
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011201738856.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011201906579.png)
+
+
+
+
+
+### 🕵️‍♀️ 等......
+
+## 🖥️V4版本更新说明
+
+去年的魔改版（v3）使用的是 **KDE Plasma 5 桌面环境**，而在今年的新版本（v4）中，Kali 2025.1官方已推出 **KDE Plasma 6**，界面变化幅度较大，不仅在视觉上更加现代化，整体交互体验也得到了明显提升
+
+| 版本     | 视觉变化                                                     |
+| -------- | ------------------------------------------------------------ |
+| Plasma 5 | ![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20250929101815834.png) |
+| Plasma 6 | ![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251009160752454.png) |
+
+### 🧩 V4 新特点
+
+- 去掉冗余插件和启动项
+- 内存占用更低
+- 界面更简洁清爽
+
+### 🖼️ 界面示例：
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20250929110558394.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251009153426387.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251010143024393.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251009160937652.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251009161156543.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251009161226267.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251009161305954.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251010115717913.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251010115844886.png)
+
+## 🎮 使用技巧
+
+> v3 与 v4 快捷键基本一致，推荐先看这个视频教程：https://www.bilibili.com/video/BV1UJCcYcEuL/
+
+快捷键`CTRL+ALT+SHIFT+TAB`展开全部桌面
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251010134157945.png)
+
+快捷键`CTRL+ALT+E`展开全部窗口 
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251010135819005.png)
+
+快捷键`CTRL+ALT+D/S`桌面滑动
+
+快捷键`ALT+回车`打开终端
+
+快捷键`WIN+=/-`桌面放大放小
+
+快捷键`WIN+T`桌面编辑磁吸区域
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251010140457216.png)
+
+## 🕵️‍♀️ 工具更新概览
+
+> linux 版 基于统领 0.10.0的工具的界面
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251010140534567.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251009111659196.png)
+
+✅ 本次更新
+
+工具更新了：BurpSuite_pro 2025.9、yakit 1.4.4、密探1.2.3、EZ1.9.2、Naabu2.3.5、冰蝎4.1.0、webshell生成工具1.2.3、afrog 3.2.2 
+
+新增：大华漏洞工具、EZ、NacosExploit、JNDIInjection、SpringBoot-Scan、
+
+### 🔍 常用渗透测试工具
+
+| 分类           | 工具                                                         |
+| -------------- | ------------------------------------------------------------ |
+| Web 安全       | BurpSuite Pro 中文版、Cobalt Strike、Yakit、密探、冰蝎 / 哥斯拉 4.0.1、EZ |
+| 信息收集       | naabu、CMSeek、EHole、CmsVulScan、dirsearch、Fofa_Viewer、Cloud_Bucket_Leak_Detection_Tools、dnsx、subfinder、OneForAll、zpscan |
+| 漏洞扫描       | nuclei、POC-bomber、Goby、afrog、fscan、Packer-Fuzzer、woodpecker-framework |
+| 数据库利用     | Sqlmap 中文版、MDUT、ARDM                                    |
+| XSS / Web 安全 | XSS-Trike、DalFox                                            |
+| 内网渗透       | Yasso、LiqunKit、Full-Scanner、FastjsonScan、WeblogicTool、ShiroAttack2、ShiroExp、MYExploit、OA-EXPTOOL、通达OA、Apt-t00ls |
+| 暴力破解       | 社工密码生成器、pydictor                                     |
+| WebShell 管理  | 天蝎权限管理（Skyscorpion）、中国蚁剑、冰蝎、WebShell 生成工具 |
+
+## 🎨 系统预装优化工具
+
+- **浏览器**：Chrome、Firefox（支持 FoxyProxy、FindSomething、Vue Crack、OWASP Penetration Testing Kit）
+- **输入法**：搜狗输入法（已解决启动问题）
+- **开发工具**：VSCode、Oh-My-Zsh、fzf
+- **编辑器**：vim（vim-airline / vim-startify / nerdcommenter / vim-snazzy）
+- **字体**：文泉驿 + Hack Nerd Font
+- **终端美化**：Powerlevel10k、neofetch、lolcat
+- **文件管理**：ranger、utools
+- **图标主题**：Reversal 小米
+- **窗口装饰**：Windows11-Endless
+- **欢迎界面**：AnimatedAbstract_bku9
+
+## 🎨 外观定制一览
+
+| 元素        | 主题                                  |
+| ----------- | ------------------------------------- |
+| Plasma 样式 | Layan                                 |
+| 光标        | Layan                                 |
+| 登录界面    | Slice                                 |
+| 窗口修饰    | Windows11-Endless                     |
+| 登录管理器  | sddm                                  |
+| 插件        | KDE Control Station / Thermal Monitor |
+
+## 🕵️‍♀️ 完整版
+
+>系统压缩包大小：11.7 GB
+>
+>解出来：28.0 GB 左右
+
+这个版本是叫全部工具集成上去了，优点打开即可使用，缺点下载文件会很大
+
+## 🕵️‍♀️ 系统版工具包导入
+
+>系统压缩包大小：6.61 GB
+
+>  解出来：22.00GB 左右
+
+工具包里面大概有70个左右的工具，默认系统版工具箱的工具是无法打开的我们需要导入工具包。
+
+导入步骤如下：
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011094658115.png)
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011095523199.png)
+
+全部覆盖即可
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011095758410.png)
+
+工具箱即可正常打开
+
+![](https://zssnp-1301606049.cos.ap-nanjing.myqcloud.com/img/image-20251011103333573.png)
+
+
+
+
+# v3
+
+## 前言 
 
 在很早之前就听kali linux鼎鼎大名的黑客系统集成了600多种黑客工具，黑客榜首系统，现在感觉单纯一个kali做测试有时候还是不太够用，下面的直接打包的环境里面集成了一些工具
 
